@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "alt": "GitHub",
+      "slug": "github",
+      "url": "https://github.com/pranjal2410/"
+    },
+    {
+      "alt": "LinkedIn",
+      "slug": "linkedin",
+      "url": "https://www.linkedin.com/in/pranjal-newalkar/"
+    },
+    {
+      "alt": "Instagram",
+      "slug": "instagram",
+      "url": "https://www.instagram.com/chogi24/"
+    },
+    {
+      "alt": "Gmail",
+      "slug": "gmail",
+      "url": "mailto://newalkarpranjal2410.pn@gmail.com"
+    }
+  ],
+  "titles": [
+    "Full-stack developer 🌐",
+    "Computer Engineering Student💻",
+    "Just getting started 📈"
+  ]
+}
