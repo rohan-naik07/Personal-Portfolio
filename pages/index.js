@@ -3,7 +3,8 @@ import {Grid, MuiThemeProvider, Container, Tooltip,colors, Hidden, SwipeableDraw
 import {AccountBox, Brightness4, Brightness7, Language, Laptop, ShowChart,Menu} from '@material-ui/icons';
 import {useContext, useState} from "react";
 import {ThemeContext} from "./theme";
-import {data, titles} from "../initial.json";
+import data from "../initial.json";
+import titles from "../initial.json";
 import Initial from '../components/Initial'
 import simpleIcons from "simple-icons";
 import {AnimatePresence} from "framer-motion";
@@ -11,9 +12,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import {projects} from "../githubData.json";
-import {experience} from "../experienceData.json";
-import {techStack} from "../techStack.json";
+import projects from "../githubData.json";
+import experience from "../experienceData.json";
+import techStack from "../techStack.json";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import IconButton from '@material-ui/core/IconButton';
 import TechStack from "../components/TechStack";
