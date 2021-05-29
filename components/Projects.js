@@ -1,4 +1,4 @@
-import {makeStyles, Grid, CardActions, Typography, Avatar, useTheme, Card, Paper, Box, useMediaQuery} from "@material-ui/core";
+import {makeStyles, Grid, CardActions, Typography, Avatar, useTheme, Card, Paper,useMediaQuery} from "@material-ui/core";
 import {motion} from "framer-motion";
 import React from "react";
 import Timeline from '@material-ui/lab/Timeline';

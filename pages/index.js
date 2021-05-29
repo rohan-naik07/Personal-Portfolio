@@ -3,8 +3,7 @@ import {Grid, MuiThemeProvider, Container, Tooltip,colors, Hidden, SwipeableDraw
 import {AccountBox, Brightness4, Brightness7, Language, Laptop, ShowChart,Menu} from '@material-ui/icons';
 import {useContext, useState} from "react";
 import {ThemeContext} from "./theme";
-import data from "../initial.json";
-import titles from "../initial.json";
+import {projects,experience,data,titles,techStack} from "../all-data";
 import Initial from '../components/Initial'
 import simpleIcons from "simple-icons";
 import {AnimatePresence} from "framer-motion";
@@ -12,9 +11,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import projects from "../githubData.json";
-import experience from "../experienceData.json";
-import techStack from "../techStack.json";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import IconButton from '@material-ui/core/IconButton';
 import TechStack from "../components/TechStack";
@@ -132,7 +128,7 @@ const MainApp = (props) => {
     const drawer = ()=>(
       <Grid container direction="column" alignItems="center" spacing={3} justify="center" >
         {Object.keys(objects).map((key,i)=>(
-          <Grid item xs={12} key={i}>
+          <Grid item xs={12} key={key}>
               <Tooltip title={key}>
                   <IconButton style={{ 
                     backgroundColor: i===tabIndex ? colors.blue[theme.palette.type==='dark'?500:700] 

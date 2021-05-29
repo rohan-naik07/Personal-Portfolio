@@ -1,4 +1,4 @@
-import {Avatar, Grid, makeStyles, Tooltip, Typography, useTheme, Chip, colors, Box, useMediaQuery} from "@material-ui/core";
+import {Avatar, Grid, makeStyles, Tooltip, Typography, useTheme, Chip,Box, useMediaQuery} from "@material-ui/core";
 import {motion} from "framer-motion";
 import React from "react";
 

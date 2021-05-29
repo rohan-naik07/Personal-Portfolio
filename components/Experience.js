@@ -1,4 +1,4 @@
-import {Grid, Typography, Card, makeStyles, useTheme, Paper} from "@material-ui/core";
+import {Grid, Typography, Card, makeStyles, Paper} from "@material-ui/core";
 import {motion} from "framer-motion";
 import Image from "next/image";
 import React from "react";
