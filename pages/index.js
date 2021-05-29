@@ -1,6 +1,6 @@
 import React from 'react';
-import {Grid, MuiThemeProvider, Container, Tooltip,colors, Hidden} from "@material-ui/core";
-import {AccountBox, Brightness4, Brightness7, Language, Laptop, ShowChart, Stars} from '@material-ui/icons';
+import {Grid, MuiThemeProvider, Container, Tooltip,colors, Hidden, SwipeableDrawer, Backdrop} from "@material-ui/core";
+import {AccountBox, Brightness4, Brightness7, Language, Laptop, ShowChart,Menu} from '@material-ui/icons';
 import {useContext, useState} from "react";
 import {ThemeContext} from "./theme";
 import {data, titles} from "../initial.json";
@@ -35,7 +35,10 @@ drawerPaper: {
     overflowX: 'hidden',
     paddingTop:20
 },
-  
+backdrop: {
+  zIndex: theme.zIndex.drawer + 1,
+  color: '#fff',
+},  
   toolbar: {
     display: 'flex',
     alignItems: 'center',
@@ -109,14 +112,13 @@ const MainApp = (props) => {
     const {theme, toggleTheme} = useContext(ThemeContext);
     const classes = useStyles();
     const [tabIndex, setTabIndex] = useState(0);
-   
-
+    const [open, setOpen] = React.useState(false);
+  
     const objects = {
       'About':<AccountBox/>,
       'Skills' : <Language/>,
       'Projects':<Laptop/>,
-      'Experience' : <ShowChart/>,
-      'Positions and Achievements':<Stars/>
+      'Experience' : <ShowChart/>
     }
 
     let tabs = [
@@ -126,16 +128,56 @@ const MainApp = (props) => {
         {Component: Experience, name: 'Experience'},
     ]
 
+    const drawer = ()=>(
+      <Grid container direction="column" alignItems="center" spacing={3} justify="center" >
+        {Object.keys(objects).map((key,i)=>(
+          <Grid item xs={12}>
+              <Tooltip title={key}>
+                  <IconButton style={{ 
+                    backgroundColor: i===tabIndex ? colors.blue[theme.palette.type==='dark'?500:700] 
+                                    : colors.grey[theme.palette.type==='dark'?500:700], 
+                    color: i===tabIndex ? theme.palette.getContrastText(
+                      colors.blue[theme.palette.type==='dark'?500:700]
+                      )
+                          : theme.palette.getContrastText(
+                            colors.grey[theme.palette.type==='dark'?500:700]
+                      )}}
+                    onClick={()=>setTabIndex(i)}>
+                      {objects[key]}
+                  </IconButton>
+              </Tooltip>
+          </Grid>
+        ))}
+      </Grid>
+    )
+
     return (
          <React.Fragment>
-            <AppBar style={{ boxShadow: 'none'}}  position='fixed' color='transparent'>
+            <AppBar style={{ boxShadow: 'none'}}  position='fixed' color='transparent' >
               <Toolbar style={{display:'flex',justifyContent:'space-between'}}>
-                  <div/>
+                  <IconButton color='inherit' onClick={() => setOpen(!open)}>
+                      <Menu fontSize='large'/>
+                  </IconButton>
                   <IconButton color='inherit' onClick={toggleTheme} edge="end">
                       {theme.palette.type==='dark'?(<Brightness7 fontSize='large'/>):(<Brightness4 fontSize='large'/>)}
                   </IconButton>
               </Toolbar>
             </AppBar>
+            <Hidden smUp>
+                <Backdrop open={open} className={classes.backdrop} onClick={() => setOpen(false)}>
+                    <SwipeableDrawer
+                        anchor="left"
+                        open={open}
+                        onOpen={() => setOpen(true)}
+                        onClose={() => setOpen(false)}
+                        classes={{
+                            paper: classes.drawerPaper
+                        }}
+                    >
+                      {drawer()}
+                    </SwipeableDrawer>
+                </Backdrop>
+            </Hidden>
             <Hidden smDown>
               <Drawer
                 variant="permanent"
@@ -146,30 +188,11 @@ const MainApp = (props) => {
                     paper: classes.drawerPaper
                 }}
               >
-                  <Grid container direction="column" alignItems="center" spacing={3} justify="center" >
-                    {Object.keys(objects).map((key,i)=>(
-                      <Grid item xs={12}>
-                          <Tooltip title={key}>
-                              <IconButton style={{ 
-                                backgroundColor: i===tabIndex ? colors.blue[theme.palette.type==='dark'?500:700] 
-                                                : colors.grey[theme.palette.type==='dark'?500:700], 
-                                color: i===tabIndex ? theme.palette.getContrastText(
-                                  colors.blue[theme.palette.type==='dark'?500:700]
-                                  )
-                                      : theme.palette.getContrastText(
-                                        colors.grey[theme.palette.type==='dark'?500:700]
-                                  )}}
-                                onClick={()=>setTabIndex(i)}>
-                                  {objects[key]}
-                              </IconButton>
-                          </Tooltip>
-                      </Grid>
-                    ))}
-                  </Grid>
+                {drawer()}
               </Drawer>
             </Hidden>
             <Toolbar/>
-            <Container style={{display:'flex',paddingTop:20}}>
+            <Container style={{ overflow: "hidden" }}>
               <AnimatePresence exitBeforeEnter>
                   {tabs.map(({Component}, i) => tabIndex===i && (
                           <Component {...props} key={i} />

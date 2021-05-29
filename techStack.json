@@ -6,6 +6,10 @@
         "slug": "cplusplus"
       },
       {
+        "alt": "C",
+        "slug": "c"
+      },
+      {
         "alt": "Java",
         "slug": "java"
       },
@@ -28,16 +32,16 @@
     ],
     "Backend Technologies": [
       {
-        "alt": "Django",
-        "slug": "django"
-      },
-      {
         "alt": "Node.js",
         "slug": "node-dot-js"
       },
       {
         "alt": "Express",
         "slug": "express"
+      },
+      {
+        "alt": "Django",
+        "slug": "django"
       },
       {
         "alt": "Flask",
@@ -80,22 +84,22 @@
         "slug": "postgresql"
       }
     ],
-    "Cloud & DevOps": [
+    "Other Technologies": [
       {
         "alt": "Amazon AWS",
         "slug": "amazonaws"
       },
       {
-        "alt": "Heroku",
-        "slug": "heroku"
+        "alt": "OpenCv",
+        "slug": "opencv"
+      },
+      {
+        "alt": "TensorFlow",
+        "slug": "tensorflow"
       },
       {
         "alt": "Netlify",
         "slug": "netlify"
-      },
-      {
-        "alt": "Vercel",
-        "slug": "vercel"
       },
       {
         "alt": "NGINX",

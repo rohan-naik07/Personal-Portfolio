@@ -3,27 +3,32 @@
     {
       "alt": "GitHub",
       "slug": "github",
-      "url": "https://github.com/pranjal2410/"
+      "url": "https://github.com/rohan-naik07/"
     },
     {
       "alt": "LinkedIn",
       "slug": "linkedin",
-      "url": "https://www.linkedin.com/in/pranjal-newalkar/"
+      "url": "https://www.linkedin.com/in/rohan-naik-5a076a185/"
     },
     {
       "alt": "Instagram",
       "slug": "instagram",
-      "url": "https://www.instagram.com/chogi24/"
+      "url": "https://www.instagram.com/rohan_naik_07/"
     },
     {
       "alt": "Gmail",
       "slug": "gmail",
-      "url": "mailto://newalkarpranjal2410.pn@gmail.com"
+      "url": "mailto://rohan.nn1203gmail.com"
+    },
+    {
+      "alt": "Resume",
+      "slug": "googledrive",
+      "url": "https://www.linkedin.com/in/rohan-naik-5a076a185/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACu3kMgBdDqMKD8KSGLbcdh1Lfd9vZdowQ0,1617793436526)/"
     }
   ],
   "titles": [
-    "Full-stack developer 🌐",
-    "Computer Engineering Student💻",
-    "Just getting started 📈"
+    "Full-stack developer",
+    "Computer Engineering Student",
+    "Deep Learning Enthusiast"
   ]
 }

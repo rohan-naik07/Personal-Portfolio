@@ -1,32 +1,45 @@
 {
   "experience": [
     {
-      "organization": "PICT IEEE Student Branch (PISB)",
-      "role": "Technical Head & Event Head",
-      "type": "Member",
-      "startDate": "February 2019",
+      "organization": "vCreaTek Consulting Services Pvt Ltd",
+      "role": "Full Stack Developer Intern",
+      "type": "Intern",
+      "startDate": "February 2021",
       "endDate": "Present",
-      "url": "https://www.linkedin.com/company/pisbieee/",
+      "url": "https://www.linkedin.com/company/vcreatek/mycompany/",
       "image": {
-        "src": "/organization-pisb.jpeg",
+        "src": "/vcreatek.jpg",
         "width": 200,
         "height": 200
       },
       "location": "Pune, India"
     },
     {
-      "organization": "Mindkosh",
-      "role": "Backend Developer Intern",
+      "organization": "LenDenClub",
+      "role": "Data Engineer Intern",
       "type": "Intern",
-      "startDate": "March 2021",
-      "endDate": "June 2021",
-      "url": "https://www.linkedin.com/company/mindkosh/about/",
+      "startDate": "July 2020",
+      "endDate": "September 2020",
+      "url": "https://www.linkedin.com/company/lenden-club/",
       "image": {
-        "src": "/organization-mindkosh.jpeg",
+        "src": "/lenden.png",
         "width": 200,
         "height": 200
       },
-      "location": "New Delhi, India"
+      "location": "Mumbai, India"
+    },{
+      "organization": "PICT ACM Student Branch(PASC)",
+      "role": "Student Volunteer",
+      "type": "Volunteer",
+      "startDate": "March 2019",
+      "endDate": "Present",
+      "url": "https://www.linkedin.com/in/pict-acm-student-chapter-09004a132/",
+      "image": {
+        "src": "/pasc.png",
+        "width": 200,
+        "height": 200
+      },
+      "location": "Pune, India"
     }
   ]
 }
