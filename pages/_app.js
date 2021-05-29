@@ -1,4 +1,4 @@
-import {ThemeContextProvider} from "./theme";
+import {ThemeContextProvider} from "../components/theme";
 import React, {useEffect} from "react";
 import Head from "next/head";
 

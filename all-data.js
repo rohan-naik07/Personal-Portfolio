@@ -51,7 +51,7 @@ export const projects =  [
         endDate: 'June 2020',
         project_link: 'https://github.com/rohan-naik07/Face-Mask-Recognition',
         techStack:{
-            Languages: [ 'python' ],
+            'Languages': [ 'python' ],
             'Backend Technologies': [ 'flask' ],
             'Other Technologies': [ 'tensorflow', 'opencv' ]
           }

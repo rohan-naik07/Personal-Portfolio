@@ -26,16 +26,16 @@ const useStyles = makeStyles((theme) => ({
   drawer: {
     width: drawerWidth,
     overflowX: 'hidden',
-},
-drawerPaper: {
-    width: drawerWidth,
-    overflowX: 'hidden',
-    paddingTop:20
-},
-backdrop: {
-  zIndex: theme.zIndex.drawer + 1,
-  color: '#fff',
-},  
+  },
+  drawerPaper: {
+      width: drawerWidth,
+      overflowX: 'hidden',
+      paddingTop:20
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+  },  
   toolbar: {
     display: 'flex',
     alignItems: 'center',
@@ -70,7 +70,7 @@ export async function getStaticProps() {
   });
 
   let obj = {};
-    Object.keys(techStack).map((key, i) => {
+    Object.keys(techStack).map((key, i)   => {
         obj[key] = techStack[key].map(({alt, slug}, i) => {
             return {
                 alt: alt,
