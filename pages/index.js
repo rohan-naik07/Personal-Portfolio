@@ -2,7 +2,7 @@ import React from 'react';
 import {Grid, MuiThemeProvider, Container, Tooltip,colors, Hidden, SwipeableDrawer, Backdrop} from "@material-ui/core";
 import {AccountBox, Brightness4, Brightness7, Language, Laptop, ShowChart,Menu} from '@material-ui/icons';
 import {useContext, useState} from "react";
-import {ThemeContext} from "./theme";
+import {ThemeContext} from "../components/theme";
 import {projects,experience,data,titles,techStack} from "../all-data";
 import Initial from '../components/Initial'
 import simpleIcons from "simple-icons";
