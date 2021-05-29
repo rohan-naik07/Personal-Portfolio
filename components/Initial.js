@@ -60,7 +60,7 @@ const Initial = ({ iconData, titles })=>{
                     </motion.div>
                     </Grid>       
                     <Grid item xs={12} container direction="row" spacing={2}>
-                        {iconData.map(({ alt, url, path, hex }, i) => {
+                        {iconData.map(({alt, url, path, hex }, i) => {
                             return (
                                 <Grid item key={i}>
                                      <motion.div
@@ -119,7 +119,7 @@ const Initial = ({ iconData, titles })=>{
                         }}
                         animate={{ opacity: 1, x: "0%", transition: {delay: 0.2, duration: 1}}}
                         whileHover={{
-                            scale: 1.2,
+                            scale: 1.1,
                             transition: { duration: 1 },
                         }}
                         exit={{ opacity: 0, x: "-50%",

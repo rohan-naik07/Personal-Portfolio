@@ -35,7 +35,7 @@ const TechStack = ({techStack, delayPeriod}) => {
     ]
 
     return (
-        <Grid item container direction="column" alignItems="center" justify="center">
+        <Grid item container direction="column" alignItems="center" justify="center" style={{marginLeft:'-15px'}}>
             <Grid item xs={12} style={{padding:5}}>
                 <Typography variant='caption'>Languages Used</Typography>
             </Grid>
@@ -135,7 +135,7 @@ const TechStack = ({techStack, delayPeriod}) => {
                             <Box>   
                                 <Typography variant='h6'>Notable Skills</Typography>
                                 {otherSkills.map((skill,i)=>(
-                                    <Chip avatar={<Avatar>{i+1}</Avatar>} label={skill} color={colors.blue[500]}/>
+                                    <Chip avatar={<Avatar>{i+1}</Avatar>} label={skill} key={i}/>
                                 ))}
                             </Box>
                         </motion.h1>
@@ -146,7 +146,7 @@ const TechStack = ({techStack, delayPeriod}) => {
                         <Typography variant='caption'>Backend</Typography>
                     </Grid>  
                     {techStack["Backend Technologies"].map(({alt, path, hex, title }, j) => (
-                        <Grid item key={title} justifyContent="flex-start">
+                        <Grid item key={title}>
                             <motion.div
                                 initial={{ opacity: 0, scale: 1.2*j/2}}
                                 animate={{ opacity: 1, scale: 1, transition: {delay: 0.2*j} }}

@@ -50,22 +50,22 @@ const Projects = ({ projects }) => {
         <React.Fragment>
             {projects.map((project, i) =>(
                 <motion.div
-                key={i}
-                initial={{ opacity: 0, x: i/2!==0?"50%":"-50%",
-                    transition: {
-                        duration: 1.5,
-                        ease: [0.43, 0.13, 0.23, 0.96]
-                    }
-                }}
-                animate={{ opacity: 1, x: "0%", transition: {delay: 0.3*(i+1), duration: 1}}}
-                exit={{ opacity: 0, x: i/2!==0?"50%":"-50%",
-                    transition: {
-                        delay: 0.2*(i+1),
-                        duration: 1,
-                        ease: [0.43, 0.13, 0.23, 0.96]
-                    }
-                }}
-                inherit={false}
+                    key={i}
+                    initial={{ opacity: 0, x: i/2!==0?"50%":"-50%",
+                        transition: {
+                            duration: 1.5,
+                            ease: [0.43, 0.13, 0.23, 0.96]
+                        }
+                    }}
+                    animate={{ opacity: 1, x: "0%", transition: {delay: 0.3*(i+1), duration: 1}}}
+                    exit={{ opacity: 0, x: i/2!==0?"50%":"-50%",
+                        transition: {
+                            delay: 0.2*(i+1),
+                            duration: 1,
+                            ease: [0.43, 0.13, 0.23, 0.96]
+                        }
+                    }}
+                    inherit={false}
                 >
                 <a href={project.project_link} target='_blank' rel='noopener noreferrer' style={{ textDecoration: "none"}}>
                     <Card className={classes.card} component={Paper} elevation={5}>
@@ -151,14 +151,13 @@ const Projects = ({ projects }) => {
                     <Timeline align= {mdDown ? 'right' : "alternate"} >
                     {projects.map((project, i) => {
                     return (
-                        <TimelineItem>
+                        <TimelineItem  key={i}>
                             <TimelineSeparator>
                                 <TimelineDot />
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
                             <motion.div
-                                key={i}
                                 initial={{ opacity: 0, x: i/2!==0?"50%":"-50%",
                                     transition: {
                                         duration: 1.5,

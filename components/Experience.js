@@ -38,8 +38,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Experience = ({ experience }) => {
     const classes = useStyles();
-    const theme = useTheme();
-
     return (
         <Grid item container direction="row-reverse" alignItems="center" style={{ height: "100%"}}>
             <Grid item xs={12} sm={6}>
