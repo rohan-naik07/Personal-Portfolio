@@ -200,9 +200,23 @@ export const projects =  [
           {
             "alt": "Android",
             "slug": "android"
+          },
+          {
+            "alt": "Redux",
+            "slug": "redux"
           }
         ],
-        "Database Engines": [
+        "Other Technologies": [
+          {
+            "alt": "Amazon AWS",
+            "slug": "amazonaws"
+          },{
+            "alt": "Docker",
+            "slug": "docker"
+          },{
+            "alt": "Git",
+            "slug": "git"
+          },
           {
             "alt": "MySQL",
             "slug": "mysql"
@@ -218,36 +232,6 @@ export const projects =  [
           {
             "alt": "PostgreSQL",
             "slug": "postgresql"
-          }
-        ],
-        "Other Technologies": [
-          {
-            "alt": "Amazon AWS",
-            "slug": "amazonaws"
-          },
-          {
-            "alt": "OpenCv",
-            "slug": "opencv"
-          },
-          {
-            "alt": "TensorFlow",
-            "slug": "tensorflow"
-          },
-          {
-            "alt": "Netlify",
-            "slug": "netlify"
-          },
-          {
-            "alt": "NGINX",
-            "slug": "nginx"
-          },
-          {
-            "alt": "Docker",
-            "slug": "docker"
-          },
-          {
-            "alt": "Git",
-            "slug": "git"
           }
         ]
       }
