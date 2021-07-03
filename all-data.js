@@ -25,7 +25,19 @@ export const projects =  [
           }
       },
       {
-        name: 'React Ubuntu Clone',
+        name: 'Instagram Clone',
+        description: 'A cross platform and fully functional Instagram Clone',
+        startDate: 'June 2021',
+        endDate: 'July 2021',
+        project_link: 'https://github.com/rohan-naik07/Instagram-Clone',
+        techStack: {
+            Languages: [ 'dart' ],
+            'Frontend Technologies': [ 'flutter' ],
+            'Backend Technologies': [ 'firebase' ],
+          }
+      },
+      {
+        name: 'React Ubuntu Desktop',
         description: 'An open source project of an Ubuntu like interface where users can use various applications and execute linux commands',
         startDate: 'April 2021',
         endDate: 'May 2021',
@@ -158,6 +170,10 @@ export const projects =  [
             "slug": "javascript"
           },
           {
+            "alt": "Dart",
+            "slug": "dart"
+          },
+          {
             "alt": "HTML5",
             "slug": "html5"
           },
@@ -200,6 +216,14 @@ export const projects =  [
           {
             "alt": "Android",
             "slug": "android"
+          },
+          {
+            "alt": "Flutter",
+            "slug": "flutter"
+          },
+          {
+            "alt": "Tailwind CSS",
+            "slug": "tailwindcss"
           },
           {
             "alt": "Redux",
