@@ -76,7 +76,7 @@ export const projects =  [
           "role": "Full Stack Developer Intern",
           "type": "Intern",
           "startDate": "February 2021",
-          "endDate": "Present",
+          "endDate": "June 2021",
           "url": "https://www.linkedin.com/company/vcreatek/mycompany/",
           "image": {
             "src": "/vcreatek.jpg",
@@ -172,14 +172,6 @@ export const projects =  [
           {
             "alt": "Dart",
             "slug": "dart"
-          },
-          {
-            "alt": "HTML5",
-            "slug": "html5"
-          },
-          {
-            "alt": "CSS3",
-            "slug": "css3"
           }
         ],
         "Backend Technologies": [
@@ -190,10 +182,6 @@ export const projects =  [
           {
             "alt": "Express",
             "slug": "express"
-          },
-          {
-            "alt": "Django",
-            "slug": "django"
           },
           {
             "alt": "Flask",
@@ -210,16 +198,16 @@ export const projects =  [
             "slug": "next-dot-js"
           },
           {
+            "alt": "HTML5",
+            "slug": "html5"
+          },
+          {
+            "alt": "CSS3",
+            "slug": "css3"
+          },
+          {
             "alt": "Material-UI",
             "slug": "material-ui"
-          },
-          {
-            "alt": "Android",
-            "slug": "android"
-          },
-          {
-            "alt": "Flutter",
-            "slug": "flutter"
           },
           {
             "alt": "Tailwind CSS",
@@ -229,18 +217,23 @@ export const projects =  [
             "alt": "Redux",
             "slug": "redux"
           }
+          
         ],
-        "Other Technologies": [
+        "Mobile Technologies" : [
           {
-            "alt": "Amazon AWS",
-            "slug": "amazonaws"
-          },{
-            "alt": "Docker",
-            "slug": "docker"
-          },{
-            "alt": "Git",
-            "slug": "git"
+            "alt": "Android",
+            "slug": "android"
           },
+          {
+            "alt": "Flutter",
+            "slug": "flutter"
+          },
+          {
+            "alt": "React Native",
+            "slug": "react"
+          }
+        ],
+        "Databases" : [
           {
             "alt": "MySQL",
             "slug": "mysql"
@@ -256,6 +249,18 @@ export const projects =  [
           {
             "alt": "PostgreSQL",
             "slug": "postgresql"
+          }
+        ],
+        "Other Technologies": [
+          {
+            "alt": "Amazon AWS",
+            "slug": "amazonaws"
+          },{
+            "alt": "Docker",
+            "slug": "docker"
+          },{
+            "alt": "Git",
+            "slug": "git"
           }
         ]
       }
