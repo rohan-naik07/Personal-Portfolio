@@ -19,26 +19,15 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const TechStack = ({techStack, delayPeriod}) => {
+const TechStack = ({techStack}) => {
     const classes = useStyles();
     const theme = useTheme();
-
-    const otherSkills = [
-        "Full Stack Development",
-        "Data Structures and Algorithms",
-        "Object Oriented Programming",
-        "Deep Learning",
-        "Database Management Systems",
-        "Operating Systems",
-        "MS Office",
-        "Adobe Photoshop"
-    ]
+   
 
 
     return (
         <Grid item container direction="row" alignItems="center" justify="center" spacing={2} xs={12} style={{margin:10}}>
-            <Grid item xs={12} md={6} container>
-            <Grid item xs={12}>
+            <Grid item xs={12} md={6}>
                 <motion.h1
                     className={classes.title}
                     initial={{ opacity: 0, x: "50%" }}
@@ -56,32 +45,6 @@ const TechStack = ({techStack, delayPeriod}) => {
                     }}
                 >My Skill Set</motion.h1>
             </Grid>
-            <Grid item xs={12}>
-                <motion.h1
-                    initial={{ opacity: 0, x: "50%" }}
-                    animate={{ opacity: 1, x: "0%",
-                        transition: {
-                            duration: 1.5,
-                            ease: [0.43, 0.13, 0.23, 0.96]
-                        }}
-                    }
-                    exit={{ opacity: 0, x: "50%",
-                        transition: {
-                            duration: 1.5,
-                            ease: [0.43, 0.13, 0.23, 0.96]
-                        }
-                    }}
-                >
-                    <Box>   
-                        <Typography variant='h6'>Notable Skills</Typography>
-                        {otherSkills.map((skill,i)=>(
-                            <Chip avatar={<Avatar>{i+1}</Avatar>} label={skill} key={i}/>
-                        ))}
-                    </Box>
-                </motion.h1>
-            </Grid>
-            
-        </Grid>
         <Grid item container direction="column" alignItems="center" justify="center" spacing={2} xs={12} md={6}>
             {Object.keys(techStack).map((key,i)=>(
                 <Grid item xs={12}>

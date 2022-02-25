@@ -126,9 +126,9 @@ const MainApp = (props) => {
     ]
 
     const drawer = ()=>(
-      <Grid container direction="column" alignItems="center" spacing={3} justify="center" >
+      <Grid container direction="row" alignItems="center" spacing={3} justify="center" >
         {Object.keys(objects).map((key,i)=>(
-          <Grid item xs={12} key={key}>
+          <Grid item xs={12} key={key} alignItems="center" style={{justifyContent:'center',textAlign:'center'}}>
               <Tooltip title={key}>
                   <IconButton style={{ 
                     backgroundColor: i===tabIndex ? colors.blue[theme.palette.type==='dark'?500:700] 

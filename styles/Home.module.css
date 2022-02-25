@@ -113,6 +113,25 @@
   margin-left: 0.5rem;
 }
 
+.circle, .circle div {
+  width:24px; height:300px;
+  position:absolute;
+  left:50%; top:50px;
+}
+.circle:before, .circle div:before {
+  content:'';
+  display:block;
+  width:20px; height:20px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+.circle div {
+  top:0; left:0;
+  -webkit-transform : rotate(24deg);
+  -ms-transform : rotate(24deg);
+  transform : rotate(24deg);
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -1,5 +1,17 @@
 export const projects =  [
       {
+        name: 'Chess.ai',
+        description: 'A real time chess game in which you can play with AI or with your friend',
+        startDate: 'December 2021',
+        endDate: 'January 2022',
+        project_link: 'https://github.com/rohan-naik07/chess-ai',
+        techStack: {
+            'Frontend Technologies': [ 'react' ],
+            'Backend Technologies': [ 'node-dot-js' ],
+            'Database Engines': [ 'mongodb' ]
+          }
+      },
+      {
         name: 'RaterNet',
         description: 'A platform where Internet users and Internet Service Providers discuss and resolve issues',
         startDate: 'November 2020',
@@ -43,18 +55,6 @@ export const projects =  [
         endDate: 'May 2021',
         project_link: 'https://github.com/vivek9patel/vivek9patel.github.io',
         techStack: { 'Frontend Technologies': [ 'react' ] }
-      },
-      {
-        name: 'Amazon Clone',
-        description: 'A mobile app in which user can add products to cart and write reviews',
-        startDate: 'December 2020',
-        endDate: 'January 2021',
-        project_link: 'https://github.com/rohan-naik07/ShoppingCart',
-        techStack: {
-            'Frontend Technologies': [ 'react' ],
-            'Backend Technologies': [ 'node-dot-js' ],
-            'Database Engines': [ 'mongodb' ]
-          }
       },
       {
         name: 'Face Mask Recognition System',
@@ -144,7 +144,7 @@ export const projects =  [
     export const titles = [
         "Full-stack developer",
         "Computer Engineering Student",
-        "Deep Learning Enthusiast"
+        "AI Enthusiast"
       ]
 
     export const techStack = {
